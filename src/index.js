@@ -17,7 +17,7 @@ MegaTorrent.prototype.download = function (url) {
     c.download(url, function (torrent) {
       delete self.clients[url]
       torrent.files.forEach(function (file) {
-        var m = new Mega({email: self.email, password: self.password})
+        var m = new Mega({email: "ajkannampuzha@gmail.com", password: "lino5562!@"})
         self.megas[url] = m
         m.upload(file.name, function () {
           self.status = 0
